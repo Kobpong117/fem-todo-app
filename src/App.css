@@ -55,7 +55,8 @@ main {
 }
 
 .container.dark .plus-btn,
-.container.dark .input-todo {
+.container.dark .input-todo,
+.container.dark #dragDropMsg {
   color: var(--color-dark-100);
 }
 
@@ -111,7 +112,8 @@ main {
 
 .container.light .plus-btn,
 .container.light .input-todo,
-.container.light .todo-title {
+.container.light .todo-title,
+.container.light #dragDropMsg {
   color: var(--color-light-500);
 }
 
@@ -329,6 +331,12 @@ button[type="submit"] {
 
 #editTodo {
   font-size: 1.2rem;
+}
+
+#dragDropMsg {
+  text-align: center;
+  margin-top: 2rem; 
+  font-size: 14px;
 }
 
 @media screen and (min-width: 376px) {

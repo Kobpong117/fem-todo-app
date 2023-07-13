@@ -185,6 +185,7 @@ function App() {
             showCompletedTodos={showCompletedTodos}
             selectedFilter={selectedFilter}
           />
+          <p id="dragDropMsg">Drag and drop to reorder list</p>
         </section>
       </section>
     </main>
