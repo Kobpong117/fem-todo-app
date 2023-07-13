@@ -63,7 +63,7 @@ function App() {
     setLocalStorage(newTodos)
   }
   
-  // Remove completed item - fired when click 'Clear Complete' button
+  // Remove all completed items - fired when click 'Clear Complete' button
   const removeCompleted = (filter) => {
     const newTodos = todos.filter(todo => todo.completed === false)
     setTodos(newTodos)

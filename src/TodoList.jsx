@@ -1,7 +1,7 @@
 import SingleTodo from "./SingleTodo"
 
 const TodoList = ({showTodos, removeTodo, updateCompleted, enterEditMode, DragDropContext, Droppable, Draggable, handleOnDragEnd}) => {
-  
+
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="todos">
@@ -14,7 +14,7 @@ const TodoList = ({showTodos, removeTodo, updateCompleted, enterEditMode, DragDr
                     if (snapshot.isDragging) {
                       provided.draggableProps.style.left = provided.draggableProps.style.offsetLeft;
                       provided.draggableProps.style.top = provided.draggableProps.style.offsetTop;
-                   }
+                    }
                    
                    return (
 
