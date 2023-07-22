@@ -6,7 +6,7 @@ const TodoList = ({showTodos, removeTodo, updateCompleted, enterEditMode, DragDr
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="todos">
         {(provided) => (
-          <section {...provided.droppableProps} ref={provided.innerRef}>
+          <section {...provided.droppableProps} ref={provided.innerRef} id="my-todos">
             {showTodos && showTodos.map((todo, index) => {
               return (
                 <Draggable key={todo.id} draggableId={todo.id.toString()} index={index}>

@@ -236,11 +236,16 @@ button[type="submit"] {
   height: 70vh;
 }
 
-.single-todo {
-  width: 85%;
+#my-todos {
   max-width: 36rem;
-  display: flex;
   margin-inline: auto;
+}
+
+.single-todo {
+  /* width: 85%; */
+  /* max-width: 36rem; */
+  display: flex;
+  /* margin-inline: auto; */
   justify-content: space-between;
   align-items: center;
   padding-block: 1.2rem;
